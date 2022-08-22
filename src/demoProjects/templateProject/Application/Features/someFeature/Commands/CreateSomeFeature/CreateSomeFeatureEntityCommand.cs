@@ -15,6 +15,7 @@ namespace Application.Features.someFeature.Commands.CreateSomeFeature
     public class CreateSomeFeatureEntityCommand : IRequest<CreatedSomeFeatureEntityDto>
     {
         public string Name { get; set; }
+
         public class CreateSomeFeatureEntityCommandHandler : IRequestHandler<CreateSomeFeatureEntityCommand, CreatedSomeFeatureEntityDto>
         {
             private readonly ISomeFeatureEntityRepository _someFeatureEntityRepository;

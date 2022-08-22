@@ -14,6 +14,7 @@ namespace Domain.Entities
 
         public Brand()
         {
+
         }
 
         public Brand(int id, string name) : this()
